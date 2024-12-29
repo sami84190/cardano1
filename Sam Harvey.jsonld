@@ -1,0 +1,87 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "Sam Harvey"
+    },
+    "motivations": {
+      "@value": " I am deeply passionate about empowering decentralized communities and ensuring fair, transparent decision-making processes. Being a DRep offers an opportunity to bridge the gap between stakeholders with diverse perspectives and the governance mechanisms that shape their experiences. By representing the voices of others in governance, I hope to contribute to a system where every participant feels their views are genuinely considered and valued"
+    },
+    "objectives": {
+      "@value": "I believe so much in governance by popular vote via the holders and want to be apart of history "
+    },
+    "paymentAddress": {
+      "@value": "addr1q87xmunahhc8yvpupln09nvxa68mnmgv0uzlnt046u6qgzr2zu0dlkpdsm9ue69vad56m4fz9838c23m3key7wwgc7jqen7kex"
+    },
+    "qualifications": {
+      "@value": "I have a background in finance and project management, which has honed my ability to analyze complex proposals and their implications. For example, during my tenure at Thomas USAF GROUP I contributed to SBA and USDA proposals, where I was responsible for evaluating competing priorities and crafting strategies that aligned with long-term goals. This experience is directly relevant to reviewing proposals and making informed voting decisions.\n\nCommunity Engagement:\nI’ve actively participated in decentralized communities, including Cardano and have gained firsthand experience in consensus-building. As a contributor to [example], I facilitated discussions that helped align stakeholders on challenging decisions, fostering collaboration even in contentious situations.\n\nCommitment to Education and Transparency:\nI value transparency and am committed to educating stakeholders about proposals and governance systems. In t"
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "private label company I own"
+        },
+        "uri": {
+          "@value": "greenharbortools.com"
+        }
+      }
+    ]
+  }
+}
